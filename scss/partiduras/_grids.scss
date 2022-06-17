@@ -1,0 +1,32 @@
+#sec1{
+    height: 100vh;
+}
+
+#sec2{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 250px 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: "divSec2_1"
+                         "divSec2_2";
+}
+
+#divSec2_1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#divSec2_2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+#sec3{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footer";
+}

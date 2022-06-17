@@ -1,0 +1,164 @@
+@import "./fonts";
+@import "./var";
+
+.border{
+    border: 3px solid black;
+}
+
+/*----------Desarrollo del Sec1--------*/ 
+#sec1{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Grad.png");
+}
+
+
+/*Texto de Sec1*/
+.divSec1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 9rem 20rem 6rem 20rem;
+    overflow: hidden;
+}
+
+.title_Sec1{
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    align-self: center;
+    font-size: 4rem;
+    font-family: "Raleway-Bold";
+}
+
+/*Button de Sec1*/
+.button{
+    padding-top: 2rem;
+}
+
+.buttonContacto{
+    font-family: "Raleway-Bold";
+    font-size: 1rem;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: $univoColor1;
+    box-shadow: 0 5px #ff0a78;
+}
+
+.buttonContacto:hover {
+    box-shadow: 0 3px #ff0a78;
+    top: 1px;
+}
+
+.buttonContacto:active {
+    box-shadow: 0 0 #ff0a78;
+    top: 5px;
+}
+
+/*-----------Desarrollo del Sec2_1-----------*/
+
+
+
+/*----------Desarrollo del Sec2_2-----------*/
+#divSec2_1{
+    grid-area: divSec2_1;
+}
+
+#divSec2_2{
+    grid-area: divSec2_2;
+}
+
+.divING{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/Sec2-Img/Ing.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.divDER{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/Sec2-Img/Der.png");
+    background-size: 100%;
+    background-repeat: no-repeat2
+}
+
+.divCONT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/Sec2-Img/Cont.png");
+    background-size: 100%;
+    background-repeat: no-repeat2
+}
+
+.divCOM{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/Sec2-Img/Com.png");
+    background-size: 100%;
+    background-repeat: no-repeat2
+}
+
+.divAMB{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/Sec2-Img/Amb.png");
+    background-size: 100%;
+    background-repeat: no-repeat2
+}
+
+.divEDU{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/Sec2-Img/Edu.png");
+    background-size: 100%;
+    background-repeat: no-repeat2
+}
+
+.a_Sec2{
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    align-self: center;
+    font-size: 2rem;
+    font-family: "Raleway-Bold";
+    position: relative;
+    text-decoration: none;
+}
+
+.a_Sec2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+.a_Sec2:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
