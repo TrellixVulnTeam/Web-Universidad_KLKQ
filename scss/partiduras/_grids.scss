@@ -5,7 +5,7 @@
 #sec2{
     height: 100vh;
     display: grid;
-    grid-template-rows: 250px 1fr;
+    grid-template-rows: 300px 1fr;
     grid-template-columns: auto;
     grid-template-areas: "divSec2_1"
                          "divSec2_2";
@@ -13,7 +13,8 @@
 
 #divSec2_1{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-areas: "";
 }
 
 #divSec2_2{
@@ -27,6 +28,15 @@
 #sec3{
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-areas: "footer";
+    grid-template-rows: 200px 1fr 100px;
+    grid-template-areas: "divSec3_1"
+                         "divSec3_2"
+                         "footerFather";
+}
+
+
+#footerFather{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "";
 }

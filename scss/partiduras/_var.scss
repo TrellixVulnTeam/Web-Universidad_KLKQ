@@ -1,5 +1,26 @@
-$univoColor1: #E71173;
+/*Variables de colores*/
+$univoColor1: #e81272;
 $univoColor2: #2E0249;
 $univoColor3: #16003B;
+$univoColor4: #fd2888;
+$univoColor5: #ff0073;
 
-$border:2px solid black;
+/*Variables Background Sec2_2*/
+
+$Sec2bg:(
+    bg-posicion: center,
+    talla: cover
+);
+
+$univoColor:(
+    univo1: #e81272,
+    univo2: #2E0249,
+    univo3: #16003B
+);
+
+@each $name, $color in $univoColor {
+    .color--#{$name}{
+        color: $color;
+    }
+    
+}

@@ -1,0 +1,39 @@
+@import "./var";
+
+#footerFather{
+    grid-area: footerFather;
+    background-color: $univoColor1;
+}
+
+.footerInfo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.textFooter{
+    font-family: "Raleway-Medium";
+    font-size: 0.8rem;
+    color: white;
+    text-align: justify;
+    overflow: hidden;
+
+}
+
+.footerImg{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.footerImg_Cont{
+    width: 200px;
+    display: flex;
+    align-content: flex-end;
+
+}
+
+.footerImg_Img{
+    width: 100%;
+}
