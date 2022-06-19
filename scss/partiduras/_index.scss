@@ -33,18 +33,18 @@
 }
 
 /*Button de Sec1*/
-.button{
+
+.buttonSec1 {
     padding-top: 2rem;
 }
 
-.buttonContacto{
+.button{
     font-family: "Raleway-Bold";
     font-size: 1rem;
     min-width: 130px;
     height: 40px;
     color: #fff;
     padding: 5px 10px;
-    font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     display: inline-block;
@@ -55,12 +55,12 @@
     box-shadow: 0 5px #ff0a78;
 }
 
-.buttonContacto:hover {
+.button:hover {
     box-shadow: 0 3px #ff0a78;
     top: 1px;
 }
 
-.buttonContacto:active {
+.button:active {
     box-shadow: 0 0 #ff0a78;
     top: 5px;
 }
@@ -99,31 +99,16 @@
     width: 100%;
 }
 
-.buttonCampus{
-    padding-top: 2px;
-    font-family: "Raleway-Bold";
-    font-size: 1rem;
-    min-width: 130px;
-    height: 35px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    background: $univoColor2;
-    box-shadow: 0 5px #ff0a78;
+.button--Campus{
+    @extend .button;
 }
 
-.buttonCampus:hover {
+.button--Campus:hover {
     box-shadow: 0 3px #ff0a78;
     top: 1px;
 }
 
-.buttonCampus:active {
+.button--Campus:active {
     box-shadow: 0 0 #ff0a78;
     top: 5px;
 }
@@ -144,30 +129,16 @@
     width: 100%;
 }
 
-.buttonOnline{
-    font-family: "Raleway-Bold";
-    font-size: 1rem;
-    min-width: 130px;
-    height: 35px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    background: $univoColor2;
-    box-shadow: 0 5px #ff0a78;
+.button--Online{
+    @extend .button;
 }
 
-.buttonOnline:hover {
+.button--Online:hover {
     box-shadow: 0 3px #ff0a78;
     top: 1px;
 }
 
-.buttonOnline:active {
+.button--Online:active {
     box-shadow: 0 0 #ff0a78;
     top: 5px;
 }
@@ -180,7 +151,7 @@
     grid-area: divSec2_2;
 }
 
-.divING{
+.divG{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,48 +161,28 @@
 }
 
 .divDER{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend .divG;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Der.png");
-    background-size: map-get($Sec2bg , talla);
-    background-position: map-get($Sec2bg , bg-posicion);
 }
 
 .divCONT{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend .divG;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Cont.png");
-    background-size: map-get($Sec2bg , talla );
-    background-position: map-get($Sec2bg , bg-posicion );
 }
 
 .divCOM{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend .divG;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Com.png");
-    background-size: map-get($Sec2bg , talla );
-    background-position: map-get($Sec2bg , bg-posicion );
 }
 
 .divAMB{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend .divG;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Amb.png");
-    background-size: map-get($Sec2bg , talla );
-    background-position: map-get($Sec2bg , bg-posicion );
 }
 
 .divEDU{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend .divG;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Edu.png");
-    background-size: map-get($Sec2bg , talla );
-    background-position: map-get($Sec2bg , bg-posicion );
 
 }
 

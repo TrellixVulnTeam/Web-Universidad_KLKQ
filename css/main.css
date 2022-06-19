@@ -184,17 +184,16 @@
   font-family: "Raleway-Bold"; }
 
 /*Button de Sec1*/
-.button {
+.buttonSec1 {
   padding-top: 2rem; }
 
-.buttonContacto {
+.button, .button--Campus, .button--Online {
   font-family: "Raleway-Bold";
   font-size: 1rem;
   min-width: 130px;
   height: 40px;
   color: #fff;
   padding: 5px 10px;
-  font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
   display: inline-block;
@@ -204,11 +203,11 @@
   background: #e81272;
   box-shadow: 0 5px #ff0a78; }
 
-.buttonContacto:hover {
+.button:hover, .button--Campus:hover, .button--Online:hover {
   box-shadow: 0 3px #ff0a78;
   top: 1px; }
 
-.buttonContacto:active {
+.button:active, .button--Campus:active, .button--Online:active {
   box-shadow: 0 0 #ff0a78;
   top: 5px; }
 
@@ -240,29 +239,11 @@
 .imgCampus {
   width: 100%; }
 
-.buttonCampus {
-  padding-top: 2px;
-  font-family: "Raleway-Bold";
-  font-size: 1rem;
-  min-width: 130px;
-  height: 35px;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  background: #2E0249;
-  box-shadow: 0 5px #ff0a78; }
-
-.buttonCampus:hover {
+.button--Campus:hover {
   box-shadow: 0 3px #ff0a78;
   top: 1px; }
 
-.buttonCampus:active {
+.button--Campus:active {
   box-shadow: 0 0 #ff0a78;
   top: 5px; }
 
@@ -279,28 +260,11 @@
 .imgOnline {
   width: 100%; }
 
-.buttonOnline {
-  font-family: "Raleway-Bold";
-  font-size: 1rem;
-  min-width: 130px;
-  height: 35px;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  background: #2E0249;
-  box-shadow: 0 5px #ff0a78; }
-
-.buttonOnline:hover {
+.button--Online:hover {
   box-shadow: 0 3px #ff0a78;
   top: 1px; }
 
-.buttonOnline:active {
+.button--Online:active {
   box-shadow: 0 0 #ff0a78;
   top: 5px; }
 
@@ -311,7 +275,7 @@
 #divSec2_2 {
   grid-area: divSec2_2; }
 
-.divING {
+.divG, .divDER, .divCONT, .divCOM, .divAMB, .divEDU {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -320,44 +284,19 @@
   background-position: center; }
 
 .divDER {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Der.png");
-  background-size: cover;
-  background-position: center; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Der.png"); }
 
 .divCONT {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Cont.png");
-  background-size: cover;
-  background-position: center; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Cont.png"); }
 
 .divCOM {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Com.png");
-  background-size: cover;
-  background-position: center; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Com.png"); }
 
 .divAMB {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Amb.png");
-  background-size: cover;
-  background-position: center; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Amb.png"); }
 
 .divEDU {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Edu.png");
-  background-size: cover;
-  background-position: center; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/Sec2-Img/Edu.png"); }
 
 .a_Sec2 {
   overflow: hidden;
