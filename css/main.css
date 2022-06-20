@@ -1,6 +1,7 @@
 /*Variables de colores*/
-/*Variables Background Sec2_2*/
-/*Uso del each, solo como ejemplo*/
+/*Uso de @extend*/
+/*Uso de @mixin*/
+/*Uso de @each, solo como ejemplo*/
 .color--univo1 {
   color: #e81272; }
 
@@ -73,8 +74,9 @@
   grid-template-areas: ""; }
 
 /*Variables de colores*/
-/*Variables Background Sec2_2*/
-/*Uso del each, solo como ejemplo*/
+/*Uso de @extend*/
+/*Uso de @mixin*/
+/*Uso de @each, solo como ejemplo*/
 .color--univo1 {
   color: #e81272; }
 
@@ -148,8 +150,9 @@
   background-color: #e81272; }
 
 /*Variables de colores*/
-/*Variables Background Sec2_2*/
-/*Uso del each, solo como ejemplo*/
+/*Uso de @extend*/
+/*Uso de @mixin*/
+/*Uso de @each, solo como ejemplo*/
 .color--univo1 {
   color: #e81272; }
 
@@ -371,8 +374,9 @@
   font-family: "Raleway-Bold"; }
 
 /*Variables de colores*/
-/*Variables Background Sec2_2*/
-/*Uso del each, solo como ejemplo*/
+/*Uso de @extend*/
+/*Uso de @mixin*/
+/*Uso de @each, solo como ejemplo*/
 .color--univo1 {
   color: #e81272; }
 
@@ -392,8 +396,8 @@
   align-content: center; }
 
 .textFooter {
-  font-family: "Raleway-Medium";
   font-size: 0.8rem;
+  font-family: "Raleway-Medium";
   color: white;
   text-align: justify;
   overflow: hidden; }
