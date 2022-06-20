@@ -12,8 +12,7 @@
 }
 
 .textFooter{
-    font-family: "Raleway-Medium";
-    font-size: 0.8rem;
+    @include font(0.8rem,"Raleway-Medium");
     color: white;
     text-align: justify;
     overflow: hidden;
