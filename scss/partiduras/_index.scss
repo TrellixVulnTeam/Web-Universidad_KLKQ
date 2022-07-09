@@ -7,7 +7,7 @@
 /*----------Desarrollo del Sec1--------*/ 
 #sec1{
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Grad.png");
 }
 
@@ -19,7 +19,7 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    padding: 9rem 20rem 6rem 20rem;
+    padding: 12rem 20rem 6rem 20rem;
     overflow: hidden;
 }
 
@@ -192,8 +192,8 @@
     text-align: center;
     align-self: center;
     font-size: 2rem;
-    font-family: "Raleway-Bold";
     position: relative;
+    font-family: "Raleway-Bold";
     text-decoration: none;
 }
 
@@ -220,6 +220,7 @@
 #divSec3_1{
     grid-area: divSec3_1;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     align-content: center;
@@ -255,7 +256,7 @@
     background-position: center;
     background-size: cover;
     min-height: 550px;
-    position: relative;
+    background-size: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Conf.png");
 }
 

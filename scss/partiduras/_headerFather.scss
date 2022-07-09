@@ -3,18 +3,18 @@
 /*Desarrollo del header principal*/
 #headerFather{
     height: 100px;
+    width: 100%;
     grid-area: headerFather;
     background: rgba( 255, 255, 255, 0 );
     backdrop-filter: blur( 12px );
     -webkit-backdrop-filter: blur( 12px );
-    border-radius: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-end;
     align-content: center;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .nav_Link{
-    color: white;
+    color: whitesmoke;
     padding: 0.80rem;
     font-size: 2rem;
     font-family: "Raleway-Bold";

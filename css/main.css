@@ -89,18 +89,18 @@
 /*Desarrollo del header principal*/
 #headerFather {
   height: 100px;
+  width: 100%;
   grid-area: headerFather;
   background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-radius: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-end;
   align-content: center;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0; }
 
 .headerIcon {
@@ -121,7 +121,7 @@
   width: 250px; }
 
 .nav_Link {
-  color: white;
+  color: whitesmoke;
   padding: 0.80rem;
   font-size: 2rem;
   font-family: "Raleway-Bold";
@@ -168,7 +168,7 @@
 /*----------Desarrollo del Sec1--------*/
 #sec1 {
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Grad.png"); }
 
 /*Texto de Sec1*/
@@ -178,7 +178,7 @@
   align-items: center;
   align-content: center;
   justify-content: center;
-  padding: 9rem 20rem 6rem 20rem;
+  padding: 12rem 20rem 6rem 20rem;
   overflow: hidden; }
 
 .title_Sec1 {
@@ -310,8 +310,8 @@
   text-align: center;
   align-self: center;
   font-size: 2rem;
-  font-family: "Raleway-Bold";
   position: relative;
+  font-family: "Raleway-Bold";
   text-decoration: none; }
 
 .a_Sec2::before {
@@ -335,6 +335,7 @@
 #divSec3_1 {
   grid-area: divSec3_1;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   align-content: center;
@@ -365,13 +366,26 @@
   background-position: center;
   background-size: cover;
   min-height: 550px;
-  position: relative;
+  background-size: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Conf.png"); }
 
 .Sec3_2Title {
   color: white;
   font-size: 4.5rem;
   font-family: "Raleway-Bold"; }
+
+/*Variables de colores*/
+/*Uso de @extend*/
+/*Uso de @mixin*/
+/*Uso de @each, solo como ejemplo*/
+.color--univo1 {
+  color: #e81272; }
+
+.color--univo2 {
+  color: #2E0249; }
+
+.color--univo3 {
+  color: #16003B; }
 
 /*Variables de colores*/
 /*Uso de @extend*/
@@ -415,3 +429,182 @@
 
 .footerImg_Img {
   width: 100%; }
+
+@media screen and (max-width: 360px) {
+  #headerFather {
+    width: auto;
+    flex-wrap: wrap; }
+  .headerNav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 0rem; }
+  .Icon {
+    padding-left: 0.3rem;
+    width: 140px; }
+  .nav_Link {
+    flex-wrap: wrap;
+    padding: 0rem;
+    font-size: 0.8rem; }
+  #siseLink {
+    background-color: transparent; }
+  #sec1 {
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Alumns3.png"); }
+  /*Texto de Sec1*/
+  .divSec1 {
+    flex-wrap: wrap;
+    padding: 12rem 12rem 6rem 12rem;
+    overflow: hidden; }
+  .title_Sec1 {
+    overflow: hidden;
+    flex-wrap: wrap;
+    font-size: 2rem; }
+  #sec2 {
+    display: none; }
+  #Sec3 {
+    width: auto;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas: "divSec3_1" "divSec3_2"; }
+  /*----------Desarrollo del Sec3_1-----------*/
+  #divSec3_1 {
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    width: 100%; }
+  .divSec3_Title {
+    font-size: 2rem;
+    padding-bottom: 1rem; }
+  .divSec3_Text {
+    font-size: 0.7rem; }
+  /*----------Desarrollo del Sec3_2-----------*/
+  #divSec3_2 {
+    width: auto;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; }
+  .Sec3_2Title {
+    color: white;
+    font-size: 4.5rem;
+    font-family: "Raleway-Bold"; }
+  #footerFather {
+    display: none; } }
+
+/*----------------------------------------------------------*/
+@media screen and (max-width: 760px) {
+  .headerNav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 0rem; }
+  .Icon {
+    padding-left: 0.3rem;
+    width: 140px; }
+  .nav_Link {
+    flex-wrap: wrap;
+    padding: 0rem;
+    font-size: 0.8rem; }
+  #siseLink {
+    background-color: transparent; }
+  #sec1 {
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Alumns3.png"); }
+  /*Texto de Sec1*/
+  .divSec1 {
+    flex-wrap: wrap;
+    padding: 12rem 12rem 6rem 12rem;
+    overflow: hidden; }
+  .title_Sec1 {
+    overflow: hidden;
+    flex-wrap: wrap;
+    font-size: 2.5rem; }
+  #sec2 {
+    display: none; }
+  #Sec3 {
+    width: auto;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas: "divSec3_1" "divSec3_2"; }
+  /*----------Desarrollo del Sec3_1-----------*/
+  #divSec3_1 {
+    padding: 0rem 1.5rem 0rem 1.5rem; }
+  .divSec3_Title {
+    font-size: 2rem;
+    padding-bottom: 1rem; }
+  .divSec3_Text {
+    font-size: 0.7rem; }
+  /*----------Desarrollo del Sec3_2-----------*/
+  #divSec3_2 {
+    width: auto;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; }
+  .Sec3_2Title {
+    color: white;
+    font-size: 4.5rem;
+    font-family: "Raleway-Bold"; }
+  #footerFather {
+    display: none; } }
+
+/*-----------------------------------------------------------*/
+@media screen and (max-width: 1100px) {
+  .headerNav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 0rem; }
+  .Icon {
+    padding-left: 0.3rem;
+    width: 140px; }
+  .nav_Link {
+    flex-wrap: wrap;
+    padding: 0rem;
+    font-size: 0.8rem; }
+  #siseLink {
+    background-color: transparent; }
+  #sec1 {
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Alumns3.png"); }
+  /*Texto de Sec1*/
+  .divSec1 {
+    flex-wrap: wrap;
+    padding: 12rem 12rem 6rem 12rem;
+    overflow: hidden; }
+  .title_Sec1 {
+    overflow: hidden;
+    flex-wrap: wrap;
+    font-size: 3rem; }
+  #sec2 {
+    display: none; }
+  #Sec3 {
+    width: auto;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas: "divSec3_1" "divSec3_2"; }
+  /*----------Desarrollo del Sec3_1-----------*/
+  #divSec3_1 {
+    padding: 0rem 1.5rem 0rem 1.5rem; }
+  .divSec3_Title {
+    font-size: 2rem;
+    padding-bottom: 1rem; }
+  .divSec3_Text {
+    font-size: 0.7rem; }
+  /*----------Desarrollo del Sec3_2-----------*/
+  #divSec3_2 {
+    width: auto;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; }
+  .Sec3_2Title {
+    color: white;
+    font-size: 4.5rem;
+    font-family: "Raleway-Bold"; }
+  #footerFather {
+    display: none; } }
