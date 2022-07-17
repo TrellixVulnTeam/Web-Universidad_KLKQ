@@ -39,31 +39,46 @@
 }
 
 .button{
-    font-family: "Raleway-Bold";
-    font-size: 1rem;
+    display: flex;
     min-width: 130px;
     height: 40px;
     color: #fff;
     padding: 5px 10px;
+    font-family: "Raleway-Bold";
+    font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    position: relative;
     display: inline-block;
     outline: none;
+    overflow: hidden;
     border-radius: 5px;
     border: none;
-    background: $univoColor1;
-    box-shadow: 0 5px #ff0a78;
-}
+    background-color: $univoColor1;
 
+}
 .button:hover {
-    box-shadow: 0 3px #ff0a78;
-    top: 1px;
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
 }
 
-.button:active {
-    box-shadow: 0 0 #ff0a78;
-    top: 5px;
+.button:hover:after {
+    opacity: 1;
+    right: 10px;
 }
+
+.button:after {
+        content: "\00BB";
+        position: absolute;
+        opacity: 0;
+        font-size: 20px;
+        line-height: 40px;
+        top: 0;
+        right: -20px;
+        transition: 0.4s;
+}
+
 
 /*-----------Desarrollo del Sec2_1-----------*/
 #divSec2_1{
@@ -79,73 +94,11 @@
 
 .titlePath{
     font-family: "Raleway-Bold";
-    font-size: 5.5rem;
+    font-size: 7rem;
     text-align: center;
 }
 
-.campus{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-}
 
-.contImgCampus{
-    width: 250px;
-}
-
-.imgCampus{
-    width: 100%;
-}
-
-.button--Campus{
-    @extend .button;
-}
-
-.button--Campus:hover {
-    box-shadow: 0 3px #ff0a78;
-    top: 1px;
-}
-
-.button--Campus:active {
-    box-shadow: 0 0 #ff0a78;
-    top: 5px;
-}
-
-.online{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-}
-
-.contImgOnline{
-    width: 250px;
-}
-
-.imgOnline{
-    width: 100%;
-}
-
-.button--Online{
-    @extend .button;
-}
-
-.button--Online:hover {
-    box-shadow: 0 3px #ff0a78;
-    top: 1px;
-}
-
-.button--Online:active {
-    box-shadow: 0 0 #ff0a78;
-    top: 5px;
-}
-
-.contButton{
-    padding-top: 25px;
-}
 /*----------Desarrollo del Sec2_2-----------*/
 #divSec2_2{
     grid-area: divSec2_2;

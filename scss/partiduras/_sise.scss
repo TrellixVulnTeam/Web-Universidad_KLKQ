@@ -1,2 +1,125 @@
 @import "./var";
 
+#divSiseLeft{
+    grid-area: divSiseLeft;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/pexels-zen-chung-5537932.jpg");
+}
+
+#divSiseRight{
+    grid-area: divSiseRight;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonSise{
+    display: flex;
+    justify-content: center;
+}
+
+.loginBox{
+    font-family: "Raleway-SemiBold";
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 400px;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.loginBox h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+  
+.loginBox .userBox {
+    position: relative;
+}
+  
+.loginBox .userBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.loginBox .userBox label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+  
+.loginBox .userBox input:focus ~ label,
+.loginBox .userBox input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+}
+
+.button{
+    display: flex;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-family: "Raleway-Bold";
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: $univoColor1;
+
+}
+.button:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
+}
+
+.button:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.button:after {
+        content: "\00BB";
+        position: absolute;
+        opacity: 0;
+        font-size: 20px;
+        line-height: 40px;
+        top: 0;
+        right: -20px;
+        transition: 0.4s;
+}
+

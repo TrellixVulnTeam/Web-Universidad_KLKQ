@@ -1,0 +1,126 @@
+@import "./var";
+@import "./fonts";
+
+#secUs1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/pexels-monstera-6238130.jpg");
+}
+
+.secUs1_title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 8rem;
+}
+
+.title_Us{
+    flex-wrap: wrap;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    align-self: center;
+    font-size: 6rem;
+    font-family: "Raleway-Bold";
+    position: relative;
+}
+
+.secUs2__div1{
+    grid-area: secUs2__div1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 5rem 12rem 0rem 12rem;
+}
+
+.secUs2_title{
+    color: $univoColor5;
+    align-self: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+    font-family: "Raleway-Bold";
+
+}
+
+.secUs2__div2{
+    grid-area: secUs2__div2;
+}
+
+.secUs2__VMV{
+    font-family: "Raleway-Bold";
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.secUs2__P{
+    font-family: "Raleway-SemiBold";
+    font-size: 1rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span{
+    font-weight: bold;
+}
+
+.secUs3__div1{
+    grid-area: secUs3__div1;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/DSC09470.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.secUs3__title{
+    font-family: "Raleway-Bold";
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    padding-right: 50rem;
+}
+
+.secUs3__div2{
+    grid-area: secUs3__div2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 50rem;
+}
+
+.secUs3__title2{
+    font-family: "Raleway-Bold";
+    font-size: 2.5rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+    color: $univoColor5;
+}
+
+.secUs3__P{
+    font-family: "Raleway-Bold";
+    font-size: 1.5rem;
+    text-align: center;
+}

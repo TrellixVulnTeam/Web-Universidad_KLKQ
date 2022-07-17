@@ -8,13 +8,14 @@
     <meta name="description" content="Universidad del valle de Orizaba - UNIVO">
     <title>Univo</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bodyIndex">
     <header id="headerFather">
-        <div class="headerIcon">
+        <div class="headerIcon" data-aos="fade-up" data-aos-duration="1250">
             <a href="./index.html"><img class="Icon" src="./img/UnivoLOGO.png" alt="Logo1"></a>
         </div>
-        <div class="headerNav">
+        <div class="headerNav" data-aos="fade-up" data-aos-duration="1250">
             <ul> <a class="nav_Link" href="./pages/Campus.html">Campus</a></ul>
             <ul> <a class="nav_Link" href="./pages/Nosotros.html">Nosotros</a></ul>
             <ul> <a class="nav_Link" href="./pages/Contacto.html">Contacto</a></ul>
@@ -24,10 +25,10 @@
     <section id="sec1">
         <section class="backgroundSec1">
             <div class="divSec1">
-                <div>
+                <div data-aos="fade-right" data-aos-duration="1250">
                     <h1 class="title_Sec1">Gente Univo Especializados en fomentar profesionales.</h1>
                 </div>
-                <div class="buttonSec1">
+                <div class="buttonSec1" data-aos="fade-up" data-aos-duration="1250">
                     <form action="./pages/Contacto.html">
                         <button class="button" type="submit">Unete!</button>
                     </form>
@@ -37,24 +38,14 @@
     </section>
     <section id="sec2">
         <div id="divSec2_1">
-            <div class="campus">
-                <div class="contImgCampus">
-                    <img class="imgCampus" src="/img/Sec2-Img/Campus.png" alt="Campus">
-                </div>
-                <div>
-                    <button class="button--Campus" type="submit">Presencial</button>
-                </div>
+            <div class="campus" data-aos="fade-right" data-aos-duration="1250">
+
             </div>
-            <div class="path">
+            <div class="path" data-aos="fade-up" data-aos-duration="1250">
                 <h1 class="titlePath">Caminos</h1>
             </div>
-            <div class="online">
-                <div class="contImgOnline">
-                    <img class="imgOnline" src="/img/Sec2-Img/Online.png" alt="Online">
-                </div>
-                <div class="contButton">
-                    <button class="button--Online">Online</button>
-                </div>
+            <div class="online" data-aos="fade-left" data-aos-duration="1250">
+ 
             </div>           
         </div>
         <div id="divSec2_2">
@@ -80,15 +71,15 @@
     </section>
     <section id="sec3">
         <div id="divSec3_1">
-            <h2 class="divSec3_Title">Univo</h2>
-            <p class="divSec3_Text">"En <span class="spanDivSec2_1">UNIVO</span> siempre contarás con los espacios idóneos para realizar cada actividad,
+            <h2 class="divSec3_Title" data-aos="fade-down" data-aos-duration="900">Univo</h2>
+            <p class="divSec3_Text" data-aos="fade-up" data-aos-duration="900>"En <span class="spanDivSec2_1">UNIVO</span> siempre contarás con los espacios idóneos para realizar cada actividad,
                                       no importa si es un experimento en laboratorio, una sesión fotográfica o un entrenamiento 
                                       de natación. En cada uno de nuestros campus contamos con las instalaciones de vanguardia para 
                                       que puedas desarrollar cada práctica como debe ser."" 
              </p>
         </div>
-        <div id="divSec3_2">
-            <h1 class="Sec3_2Title">La mejor oferta educativa</h1>
+        <div id="divSec3_2"  data-aos="fade-right" data-aos-duration="800">
+            <h1 class="Sec3_2Title" data-aos="fade-right" data-aos-duration="1250">La mejor oferta educativa</h1>
         </div>
         <footer id="footerFather">
             <div class="footerInfo">
@@ -105,4 +96,8 @@
         </footer>
     </section>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </html>

@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Univo Sise, SISE, Inicia">
+    <meta name="description" content="Inicia sesion UNIVO">
     <title>Sise</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
-    
+<body id="bodySise">
+    <header id="headerFather">
+        <div class="headerIcon" data-aos="fade-up" data-aos-duration="900">
+            <a href="../index.html"><img class="Icon" src="../img/UnivoLOGO.png" alt="Logo1"></a>
+        </div>
+        <div class="headerNav" data-aos="fade-up" data-aos-duration="900">
+            <ul> <a class="nav_Link" href="./Campus.html">Campus</a></ul>
+            <ul> <a class="nav_Link" href="./Nosotros.html">Nosotros</a></ul>
+            <ul> <a class="nav_Link" href="./Contacto.html">Contacto</a></ul>
+            <ul> <a class="nav_Link" id="siseLink" href="./Sise.html">Sise</a></ul>
+        </div>
+    </header>
+    <section id="secSise">
+        <div id="divSiseLeft">
+        </div>
+        <div id="divSiseRight" >
+            <div class="loginBox" data-aos="fade-left" data-aos-duration="1250">
+                <h2>Login</h2>
+                <form>
+                    <div class="userBox">
+                        <input type="text" name="" id="" autocomplete="off" maxlength="20" required>
+                        <label>Usuario</label>
+                    </div>
+                    <div class="userBox">
+                        <input type="password" name="" autocomplete="off" maxlength="40" required>
+                        <label>Contraseña</label>
+                    </div>
+                    <div class="buttonSise">
+                        <button class="button" type="submit">Inicia sesión</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </html>

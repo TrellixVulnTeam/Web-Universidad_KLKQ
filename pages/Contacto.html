@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gente Univo">
+    <meta name="description" content="Somos gente Univo">
     <title>Contacto</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    
+    <header id="headerContacto">
+        <div class="headerIconContacto" data-aos="fade-up" data-aos-duration="1250">
+            <a href="../index.html"><img class="IconContacto" src="../img/UnivoLOGO.png" alt="Logo1"></a>
+        </div>
+        <div class="headerNavContacto" data-aos="fade-up" data-aos-duration="900">
+            <ul> <a class="nav_LinkContacto" href="./Campus.html">Campus</a></ul>
+            <ul> <a class="nav_LinkContacto" href="./Nosotros.html">Nosotros</a></ul>
+            <ul> <a class="nav_LinkContacto" href="./Contacto.html">Contacto</a></ul>
+            <ul> <a class="nav_LinkContacto" id="siseLink" href="./Sise.html">Sise</a></ul>
+        </div>
+    </header>
+    <section id="secCont">
+        <div class="secCont__sub">
+            <p data-aos="fade-up" data-aos-duration="900">Vicente M. Corona entre privada corona y av. de los censos, Col. El Espinal C.P. 94330 | Orizaba, Veracruz, MÉXICO </p>
+            <h1 data-aos="fade-up" data-aos-duration="900">Telefono</h1>
+            <p data-aos="fade-up" data-aos-duration="900">(272) 726-14-36, 726-14-01 LADA: (800)</p>
+        </div>
+        <div class="secCont__maps" data-aos="fade-up" data-aos-duration="900">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="558" height="491" id="gmap_canvas" src="https://maps.google.com/maps?q=univo%20orizaba&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">divi discount</a><br><style>.mapouter{position:relative;text-align:right;height:491px;width:558px;}</style><a href="https://www.embedgooglemap.net">embed a google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:491px;width:558px;}</style></div></div>
+        </div>
+        <div class="secCont__form">
+            <h1 data-aos="fade-up" data-aos-duration="900">Contáctanos</h1>
+            <div id="form-main">
+                <div id="form-div">
+                    <form class="form" id="form1">
+                        <p class="name">
+                          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nombre" id="name" />
+                        </p>
+                        <p class="email">
+                          <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                        </p>
+                        <p class="text">
+                          <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Mensaje"></textarea>
+                        </p>
+                        <div class="submit">
+                          <input type="submit" value="ENVIAR" id="button-blue"/>
+                          <div class="ease"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>     
+    </section> 
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>

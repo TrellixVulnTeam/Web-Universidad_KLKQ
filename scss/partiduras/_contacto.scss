@@ -1,0 +1,201 @@
+@import "./fonts";
+@import "./var";
+
+.secCont__sub{
+    grid-area: secCont__sub;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0rem 0rem 0rem;
+
+}
+
+.secCont__sub h1{
+    font-family: "Raleway-Bold";
+    font-size: 2rem;
+    text-align: center;
+    color: $univoColor5;
+}
+
+.secCont__sub p{
+    font-family: "Raleway-Bold";
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+}
+
+.secCont__maps{
+    grid-area: secCont__maps;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+.secCont__form{
+    grid-area: secCont__form;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+	align-content: center;
+    
+}
+
+.secCont__form h1{
+	display: flex;
+	flex-wrap: wrap;
+	align-self: center;
+	text-align: center;
+    font-family: "Raleway-Bold";
+    font-size: 4.5rem;
+    color: $univoColor5;
+    padding-top: 2rem;
+}
+
+#form-main{
+    display: flex;
+    justify-content: center;
+	width:100%;
+	float:left;
+	padding-top:2rem;
+}
+
+#feedback-page{
+	text-align:center;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+    margin-top:30px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: "Raleway-Bold";
+    font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid $univoColor5;
+	color: black;
+	outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color: $univoColor5;
+	border:$univoColor5 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+    background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: "Raleway-Bold";
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: $univoColor5;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: $univoColor5;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}

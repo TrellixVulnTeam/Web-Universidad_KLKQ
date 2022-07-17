@@ -5,6 +5,7 @@
     height: 100px;
     width: 100%;
     grid-area: headerFather;
+    background-attachment: fixed;
     background: rgba( 255, 255, 255, 0 );
     backdrop-filter: blur( 12px );
     -webkit-backdrop-filter: blur( 12px );
@@ -16,6 +17,7 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
+    z-index: 2;
 }
 
 .headerIcon{

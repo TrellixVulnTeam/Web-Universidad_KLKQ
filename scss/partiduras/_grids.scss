@@ -1,3 +1,4 @@
+/*Desarrollo de Index*/
 #sec1{
     height: 100vh;
 }
@@ -38,5 +39,77 @@
 #footerFather{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "";
+}
+
+/*Desarrollo de Campus*/
+#secCamp{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+#secCamp2{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 300px 500px;
+}
+
+.secCamp2__div2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*Desarrollo de Nosotros*/
+
+#secUs1{
+    height: 100vh;
+
+}
+
+#secUs2{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 400px 1fr;
+    grid-template-areas: "secUs2__div1"
+                         "secUs2__div2";
+}
+
+.secUs2__div2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 300px 1fr;
+}
+
+#secUs3{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 450px 1fr ;
+    grid-template-areas:  "secUs3__div1"
+                          "secUs3__div2";
+}
+
+.secUs3__div1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "teachers alumns inst";
+}
+
+/*Desarrollo del contacto*/
+#secCont{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "secCont__sub secCont__form"
+                         "secCont__maps secCont__form";
+}
+
+
+/*Desarrollo de Sise*/
+#secSise{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    grid-template-areas: "divSiseLeft divSiseRight" ;
 }

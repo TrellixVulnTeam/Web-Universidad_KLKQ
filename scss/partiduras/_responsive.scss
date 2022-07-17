@@ -1,20 +1,42 @@
-@media screen and (max-width: 360px){
+@media screen and (max-width: 380px){
+
     #headerFather{
         width: auto;
         flex-wrap: wrap;
     }
 
-    
+    #headerContacto{
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    .headerNavContacto{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-right: 0rem;
+    }
+
     .headerNav{
         flex-direction: row;
         flex-wrap: wrap;
         padding-right: 0rem;
 
     }
+
+    .IconContacto{
+        padding-left: 0.3rem;
+        width: 140px;
+    }
     
     .Icon{
         padding-left: 0.3rem;
         width: 140px;
+    }
+
+    .nav_LinkContacto{
+        flex-wrap: wrap;
+        padding: 0rem;
+        font-size: 0.8rem;
     }
     
     .nav_Link{
@@ -26,6 +48,8 @@
     #siseLink{
         background-color: transparent;
     }
+
+
 
 
     #sec1{
@@ -96,7 +120,126 @@
     #footerFather{
         display: none;
     }
+
+    /*Campus*/
+    #secCamp{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    #secCamp2{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .secCamp2__div h1{
+        font-size: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .secCamp2__div p{
+        font-size: 0.9rem;
+        height: auto;
+        padding: 0rem 5rem 5rem 5rem;
+
+    }
+
+    /*Nosotros*/
+    #secUs1{
+        width: auto;
+        background-attachment: fixed;
+    }
+
+    .title_Us{
+        font-size: 4rem;
+    }
+
+    #secUs2{
+        height: auto;
+        display: grid;
+        grid-template-rows: 450px;
+        grid-template-areas: "secUs2__div1"
+    }
+
+    .secUs2__div1{
+        padding: 1rem 0rem 0rem 0rem;
+    }
+
+    .secUs2_title{
+        font-size: 2rem;
+    }
+
+    .secUs2__div2{
+        display: none;
+    }
+
+    #secUs3{
+        display: none;
+    }
+
+    /*Contacto*/
+
+    #secCont{
+        height: auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: "secCont__form";
+    }
+
+    .secCont__sub{
+        display: none;
+    }
+
+    .secCont__maps{
+        display: none;
+    }
+
+    .secCont__form{
+        padding: 0rem 0rem 0rem 2.5rem;
+    }
+
+    .secCont__form h1{
+        padding-top: 8rem;
+        font-size: 3rem;
+    }
+
+    #form-main{
+        width:auto;
+    }
+
+    #form-main{
+        width: 300px;
+    }
+
+    /*Sise*/
+
+    #secSise{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "divSiseRight";
+    }
+
+    #divSiseRight{
+        width: auto;
+        height: auto;
+        background-image: none;
+    }
+
+    #divSiseLeft{
+        display: none;
+        align-items: flex-end;
+    }
+    
+    .loginBox{
+        padding-top: 12rem;
+        top: auto;
+        left: auto; 
+        height: auto;
+        width: auto;
+    }
+
+
+
+
 }
+
 /*----------------------------------------------------------*/
 @media screen and (max-width: 760px){
 
@@ -104,7 +247,23 @@
         flex-direction: row;
         flex-wrap: wrap;
         padding-right: 0rem;
+    }
 
+    .headerNavContacto{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-right: 0rem;
+    }
+
+    .IconContacto{
+        padding-left: 0.3rem;
+        width: 140px;
+    }
+
+    .nav_LinkContacto{
+        flex-wrap: wrap;
+        padding: 0rem;
+        font-size: 0.8rem;
     }
     
     .Icon{
@@ -190,6 +349,127 @@
     #footerFather{
         display: none;
     }
+
+    /*Campus*/
+    #secCamp{
+        grid-template-columns: repeat(auto-fit, minmax(760px, 1fr));
+    }
+    
+    #secCamp2{
+        grid-template-columns: repeat(auto-fit, minmax(760px, 1fr));
+    }
+    
+    .secCamp2__div h1{
+        font-size: 2rem;
+        flex-wrap: wrap;
+    }
+    
+    .secCamp2__div p{
+        font-size: 0.9rem;
+        height: auto;
+        padding: 0rem 5rem 5rem 5rem;
+    
+    }
+
+    /*Nosotros*/
+
+    #secUs1{
+        width: auto;
+        background-attachment: fixed;
+    }
+
+    .title_Us{
+        font-size: 4rem;
+    }
+
+    #secUs2{
+        height: auto;
+        display: grid;
+        grid-template-rows: 450px;
+        grid-template-areas: "secUs2__div1"
+    }
+
+    .secUs2__div1{
+        padding: 1rem 0rem 0rem 0rem;
+    }
+
+    .secUs2_title{
+        font-size: 2rem;
+    }
+
+    .secUs2__div2{
+        display: none;
+    }
+
+    #secUs3{
+        display: none;
+    }
+
+    /*Contacto*/
+
+    #secCont{
+        height: auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: "secCont__form";
+    }
+    
+    .secCont__sub{
+        display: none;
+    }
+    
+    .secCont__maps{
+        display: none;
+    }
+    
+    .secCont__form{
+        padding: 0rem 0rem 0rem 9.5rem;
+    }
+    
+    .secCont__form h1{
+        padding-top: 8rem;
+        font-size: 3rem;
+    }
+    
+    #form-main{
+        width:auto;
+    }
+    
+    #form-main{
+         width: 100%;
+    }
+
+    /*Sise*/
+
+    #secSise{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "divSiseRight";
+    }
+
+    #divSiseRight{
+        width: auto;
+        height: auto;
+        background-image: none;
+    }
+
+    #divSiseLeft{
+        display: none;
+        align-items: flex-end;
+    }
+    
+    .loginBox{
+        padding-top: 12rem;
+        top: auto;
+        left: auto; 
+        height: auto;
+        width: auto;
+    }
+
+
+
+    
+    
+    
 }
 
 /*-----------------------------------------------------------*/
@@ -200,6 +480,23 @@
         flex-wrap: wrap;
         padding-right: 0rem;
 
+    }
+
+    .headerNavContacto{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-right: 0rem;
+    }
+
+    .IconContacto{
+        padding-left: 0.3rem;
+        width: 140px;
+    }
+
+    .nav_LinkContacto{
+        flex-wrap: wrap;
+        padding: 0rem;
+        font-size: 0.8rem;
     }
     
     .Icon{
@@ -284,5 +581,81 @@
     #footerFather{
         display: none;
     }
+
+    /*Campus*/
+
+        
+    .secCamp2__div h1{
+    font-size: 2rem;
+    flex-wrap: wrap;
+    }
+        
+    .secCamp2__div p{
+        font-size: 0.9rem;
+        height: auto;
+        padding: 0rem 5rem 5rem 5rem;
+        
+    }
+
+    /*Nosotros*/
+
+     #secUs1{
+        width: auto;
+        background-attachment: fixed;
+    }
+    
+    .title_Us{
+        font-size: 4rem;
+    }
+    
+    #secUs2{
+        height: auto;
+        display: grid;
+        grid-template-rows: 450px 1fr;
+        grid-template-areas: "secUs2__div1"
+                             "secUs2__div2";
+    }
+    
+    .secUs2__div1{
+        padding: 1rem 2rem 0rem 2rem;
+    }
+    
+    .secUs2_title{
+        font-size: 2rem;
+    }
+    
+    #secUs3{
+        display: none;
+    }
+
+    /*Sise*/
+
+    #secSise{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "divSiseRight";
+    }
+
+    #divSiseRight{
+        width: auto;
+        height: auto;
+        background-image: none;
+    }
+
+    #divSiseLeft{
+        display: none;
+        align-items: flex-end;
+    }
+    
+    .loginBox{
+        padding-top: 12rem;
+        top: auto;
+        left: auto; 
+        height: auto;
+        width: auto;
+    }
+
+    
+    
 }
 
